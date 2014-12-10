@@ -1,0 +1,20 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name"><a href="{% url 'admin:index' %}">Engage Administration</a></h1>
+{% endblock %}
+
+{#<header id="header" class="navbar navbar-default navbar-fixed-top" role="navigation">#}
+{#    <div class="container no-padding">#}
+{#        <div class="navbar-header logo no-padding">#}
+{#            <a class="navbar-brand" href="#">#}
+{#                {% load staticfiles %}#}
+{#                <img src="{% static "engage/engage-logo.png" %}" style="border-width:0px" alt="Engage"/>#}
+{#            </a>#}
+{#        </div>#}
+{#    </div>#}
+{#</header>#}
+
+{% block nav-global %}{% endblock %}
